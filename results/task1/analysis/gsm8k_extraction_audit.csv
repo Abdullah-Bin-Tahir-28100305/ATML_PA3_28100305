@@ -1,0 +1,8 @@
+condition,n,flexible_EM,format_aware_EM,non_numeric_flexible_extractions_pct,flex_wrong_but_format_aware_right,flex_right_but_format_aware_wrong,has_boxed_pct,truncated_pct,delta_flexible_pp,delta_format_aware_pp
+baseline,1319,43.37,60.65,25.32,230,2,41.09,0.83,0.00,0.00
+full_ft_mid,1319,56.63,56.63,0.00,0,0,0.83,0.76,13.27,-4.02
+full_ft,1319,64.44,64.44,0.00,0,0,0.45,0.91,21.08,3.79
+l2sp,1319,64.97,64.97,0.00,0,0,0.53,0.53,21.61,4.32
+lora4,1319,59.97,59.97,0.08,0,0,0.38,0.91,16.60,-0.68
+lora16,1319,61.64,61.64,0.08,0,0,0.68,0.61,18.27,0.99
+oplora16,1319,61.79,61.79,0.08,0,0,0.61,0.53,18.42,1.14
