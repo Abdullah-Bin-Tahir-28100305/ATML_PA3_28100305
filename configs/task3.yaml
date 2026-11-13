@@ -1,0 +1,58 @@
+# Task 3 - test-time compute on the supplied ATML-PA3-Data rollouts.
+seed: 6304
+data_root: data/ATML-PA3-Data        # path to the supplied folder (absolute, or relative to the repo root)
+models:
+  llm: {folder: qwen25-math, dataset: MATH, kind: math}
+  vlm: {folder: qwen25vl-mathvista, dataset: MathVista, kind: mathvista}
+
+# Column names verified against the supplied parquet files (schema of 2026-10 export).
+columns:
+  dataset: [dataset]
+  sample_id: [sample_id]
+  rollout_id: [rollout_id]
+  text: [generated_text]
+  token_ids: [generated_token_ids]
+  n_tokens: [n_generated_text_tokens]
+  capped: [hit_max_new_tokens]
+  extracted: [extracted_answer]
+  gold: [gold_answer]
+  logp: [logp]
+  kl_u_p: [kl_u_p]
+  attn_image: [img_attn_total]
+  attn_prompt: [prompt_text_attn_total]
+  attn_generated: [generated_text_attn_total]
+  problem: [question_text]                 # original problem text (used for live generation)
+  # MathVista metadata is NOT in the export -> loaded from AI4Math/MathVista testmini, matched on pid == sample_id
+  question_type: [question_type]
+  answer_type: [answer_type]
+  precision: [precision]
+  choices: [choices]
+  pid: [pid, sample_id]
+
+budgets: [1, 2, 4, 8, 16, 32]
+n_orders: 10
+n_dev: 200
+bootstrap: 1000
+
+live:
+  model_id: Qwen/Qwen2.5-3B-Instruct
+  revision: aa8e72537993ba99e69dfaafa59ed015b17504d1   # pinned in the supplied README.MD
+  n_questions: 50
+  system: "You are a helpful assistant."
+  prompt_join: "\n\n"                   # README: problem, two newlines, instruction
+  instruction: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
+  refine_instruction: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
+  temperature: 0.7
+  top_p: 0.8
+  top_k: 20
+  repetition_penalty: 1.0
+  long_cap: 3072
+  parallel_cap: 1024
+  n_parallel: 3
+  refine_cap: 2048
+
+adaptive:
+  check_points: [4, 8, 16]
+  tau: [0.5, 0.625, 0.75, 0.875, 1.0]
+  gamma: [0.0, 0.1, 0.25, 0.5]
+  tolerance_pp: 1.0

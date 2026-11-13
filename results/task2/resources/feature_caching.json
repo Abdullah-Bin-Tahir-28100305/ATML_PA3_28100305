@@ -1,0 +1,18 @@
+{
+  "n_images": 11174,
+  "feature_shape": [
+    196,
+    768
+  ],
+  "dtype": "float16",
+  "model_load_sec": 6.2294247260000475,
+  "encode_sec": 2216.8361119310002,
+  "sec_per_image": 0.19839234937632005,
+  "peak_gpu_mem_mb": {
+    "allocated_mb": 1766.1396484375,
+    "reserved_mb": 1990.0
+  },
+  "final_layernorm_applied_once_max_abs_err": 0.0,
+  "file_bytes": 3363999872,
+  "gpu": "Tesla T4"
+}

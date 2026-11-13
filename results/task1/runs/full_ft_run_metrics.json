@@ -1,0 +1,48 @@
+{
+  "variant": "full_ft",
+  "config": {
+    "kind": "full",
+    "lr": 2e-05,
+    "l2sp_lambda": 0.0
+  },
+  "trainable_params": 596049920,
+  "total_unique_params_in_model": 596049920,
+  "l2sp_reference_bytes": 0,
+  "l2sp_reference_device": null,
+  "recovery_ckpt_bytes": {
+    "312": 7152989977,
+    "625": 7152990041,
+    "937": 7152990105,
+    "1250": 7152990169
+  },
+  "train_sec": 6836.257805735994,
+  "skipped_updates": [],
+  "exports": {
+    "625": {
+      "update": 625,
+      "export_sec": 2.983482548000211,
+      "export_bytes": 1556934394,
+      "displacement_l2": 10.01272200011722
+    },
+    "1250": {
+      "update": 1250,
+      "export_sec": 7.595109133999358,
+      "export_bytes": 1556934394,
+      "displacement_l2": 10.646408698427635
+    }
+  },
+  "train_hours": 1.8989605015933317,
+  "l2sp_penalty_sec": 0.0,
+  "checkpoint_save_sec": 65.70795497900053,
+  "setup_sec": 16.244532856999967,
+  "peak_gpu_mem_mb_this_session": {
+    "allocated_mb": 13021.287109375,
+    "reserved_mb": 14668.0
+  },
+  "peak_gpu_mem_mb_max_over_sessions": 13290.27880859375,
+  "n_skipped": 0,
+  "resumed_at": [
+    312
+  ],
+  "gpu": "NVIDIA L4"
+}

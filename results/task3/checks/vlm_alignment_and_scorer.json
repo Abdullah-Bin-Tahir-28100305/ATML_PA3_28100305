@@ -1,0 +1,16 @@
+{
+  "n_rollouts": 32000,
+  "token_ids_vs_logp_mismatch": 0,
+  "logp_vs_kl_mismatch": 0,
+  "attn_mismatch": 0,
+  "ncol_vs_logp_mismatch": 0,
+  "empty_rollouts": 0,
+  "n_capped_rollouts": 487,
+  "n_null_extracted": 3032,
+  "total_retained_tokens": 8961703,
+  "n_questions": 1000,
+  "scorer_version": "pa3-scorer-1.0",
+  "math_verify_version": "0.9.0",
+  "mean_correct_rate": 0.5364375,
+  "no_answer_rate": 0.15378125
+}

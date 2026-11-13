@@ -1,0 +1,31 @@
+{
+  "condition": "full_ft_mid",
+  "model_path": "/content/drive/MyDrive/ATML_PA3/outputs/task1/runs/full_ft/export_u625",
+  "gsm8k": {
+    "flexible_em": 0.5663381349507203,
+    "strict_em": 0.0,
+    "n": 1319,
+    "truncation_rate": 0.0075815011372251705,
+    "extraction_rate": 1.0,
+    "em_among_extractable_nontruncated": 0.5706646294881589,
+    "mean_response_tokens": 143.15617892342684
+  },
+  "hellaswag": {
+    "acc": 0.3693487353116909,
+    "acc_stderr": 0.004816421208653988,
+    "acc_norm": 0.45727942640908187,
+    "acc_norm_stderr": 0.004971534874390047
+  },
+  "boolq": {
+    "acc": 0.5694189602446483,
+    "acc_stderr": 0.0086603601459887,
+    "acc_norm": null,
+    "acc_norm_stderr": null
+  },
+  "arc_easy": {
+    "acc": 0.6536195286195287,
+    "acc_stderr": 0.009763542075695658,
+    "acc_norm": 0.6182659932659933,
+    "acc_norm_stderr": 0.009968648851839831
+  }
+}

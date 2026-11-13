@@ -1,0 +1,24 @@
+{
+  "dev_fixed32_sc_acc": 0.825,
+  "selected": {
+    "agreement": {
+      "family": "agreement",
+      "tau": 0.625,
+      "gamma": null,
+      "policy": "adaptive",
+      "dev_acc": 0.826,
+      "dev_cost": 7088.9555,
+      "dev_mean_rollouts": 9.15
+    },
+    "quality_aware": {
+      "family": "quality_aware",
+      "tau": 0.5,
+      "gamma": 0.0,
+      "policy": "adaptive",
+      "dev_acc": 0.8215,
+      "dev_cost": 5479.528499999999,
+      "dev_mean_rollouts": 7.152
+    }
+  },
+  "rule": "lowest dev cost with dev acc >= fixed-32 SC - 1pp; ties: higher acc, smaller tau, gamma"
+}

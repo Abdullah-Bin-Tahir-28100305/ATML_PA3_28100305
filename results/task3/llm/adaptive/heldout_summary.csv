@@ -1,0 +1,9 @@
+policy,acc,mean_token_cost,mean_rollouts
+fixed-1 SC,0.6435,669.77,1
+fixed-2 SC,0.6435,1339.9,2
+fixed-4 SC,0.692,2679.7,4
+fixed-8 SC,0.71787,5344.1,8
+fixed-16 SC,0.73113,10678,16
+fixed-32 SC,0.73787,21347,32
+agreement tau=0.625 gamma=None,0.73638,10139,11.823
+quality_aware tau=0.5 gamma=0.0,0.73175,7663.1,9.0075

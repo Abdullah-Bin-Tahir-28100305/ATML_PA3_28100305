@@ -1,0 +1,31 @@
+{
+  "condition": "lora4",
+  "model_path": "/content/drive/MyDrive/ATML_PA3/outputs/task1/merged/lora4",
+  "gsm8k": {
+    "flexible_em": 0.599696739954511,
+    "strict_em": 0.0,
+    "n": 1319,
+    "truncation_rate": 0.009097801364670205,
+    "extraction_rate": 1.0,
+    "em_among_extractable_nontruncated": 0.6052027543993879,
+    "mean_response_tokens": 142.8248673237301
+  },
+  "hellaswag": {
+    "acc": 0.37641904003186616,
+    "acc_stderr": 0.004834969412883501,
+    "acc_norm": 0.4749053973312089,
+    "acc_norm_stderr": 0.004983492928103268
+  },
+  "boolq": {
+    "acc": 0.6675840978593273,
+    "acc_stderr": 0.008239226214991516,
+    "acc_norm": null,
+    "acc_norm_stderr": null
+  },
+  "arc_easy": {
+    "acc": 0.6540404040404041,
+    "acc_stderr": 0.009760749624427722,
+    "acc_norm": 0.6304713804713805,
+    "acc_norm_stderr": 0.009904325878447303
+  }
+}

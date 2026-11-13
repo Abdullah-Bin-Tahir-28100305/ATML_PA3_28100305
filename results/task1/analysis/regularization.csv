@@ -1,0 +1,4 @@
+method,update,displacement_l2,omega_from_displacement,omega_logged_last_update,lambda_omega
+Full FT,625,10.013,50.127,,0
+Full FT,1250,10.646,56.673,,0
+Full FT + L2-SP,1250,6.2749,19.687,19.687,0.019687

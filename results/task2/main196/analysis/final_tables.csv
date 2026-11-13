@@ -1,0 +1,9 @@
+suite,condition,accuracy,pair_accuracy,identical_answer_rate,empty_answer_rate,mean_ref_nll,gen_sec_per_answer,pred_equals_original_canonical_rate,pred_equals_partner_answer_rate,pred_unsupported_rate,acc_counting,acc_presence,acc_number,acc_other,acc_yes/no
+grounding,correct,0.7109,0.5156,0.375,0,0.6439,0.05673,0.7109,0.2031,0.08594,0.5,0.9219,,,
+grounding,swap,0.2031,0.03125,0.375,0,2.535,0.03276,0.2031,0.7109,0.08594,0.3281,0.07812,,,
+grounding,mismatched,0.3594,0.03125,0.6562,0,1.935,0.03073,0.3594,0.5703,0.07031,0.375,0.3438,,,
+grounding,no_image,0.4844,0,1,0,1.187,0.02363,0.4844,0.4844,0.03125,0.4688,0.5,,,
+vqa,correct,0.4922,0.2292,0.4688,0,1.6,0.03731,0.4531,0.2448,0.3021,,,0.275,0.4347,0.6944
+vqa,swap,0.2948,0.03125,0.4688,0,2.558,0.03814,0.2448,0.4531,0.3021,,,0.1708,0.1708,0.5014
+vqa,mismatched,0.3536,0.0625,0.6771,0,2.275,0.03639,0.3177,0.2708,0.4115,,,0.2417,0.1667,0.6153
+vqa,no_image,0.2766,0,1,0,2.56,0.01965,0.25,0.25,0.5,,,0.2062,0.1667,0.4333

@@ -1,0 +1,10 @@
+{
+  "results": {
+    "alias": "boolq",
+    "acc,none": 0.5694189602446483,
+    "acc_stderr,none": 0.0086603601459887
+  },
+  "versions": {
+    "boolq": 2.0
+  }
+}

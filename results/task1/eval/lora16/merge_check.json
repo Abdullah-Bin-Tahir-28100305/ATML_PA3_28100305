@@ -1,0 +1,6 @@
+{
+  "max_abs_logit_diff": 0.0625,
+  "mean_abs_logit_diff": 0.005928880535066128,
+  "argmax_agreement": 1.0,
+  "note": "FP16 merged vs FP16 backbone + FP32 unmerged adapters; small diffs come from FP16 rounding"
+}

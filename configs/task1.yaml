@@ -1,0 +1,62 @@
+# Task 1 - LLM fine-tuning (Qwen3-0.6B on MetaMathQA). All values follow the PA3 manual.
+seed: 6304
+model_id: Qwen/Qwen3-0.6B
+model_revision: null            # pin a commit hash here for full reproducibility (recorded in env.json anyway)
+
+data:
+  dataset: meta-math/MetaMathQA
+  gsm8k: openai/gsm8k
+  num_examples: 40000
+  max_len: 2048
+  qualitative_yaml: data/first_plot_questions.yaml   # SUPPLIED FILE - put it here
+
+train:
+  microbatch: 2
+  grad_accum: 16                 # effective batch 32
+  num_updates: 1250
+  warmup_updates: 38
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  weight_decay: 0.01
+  clip_norm: 1.0
+  gradient_checkpointing: true
+  recovery_updates: [312, 625, 937, 1250]   # 9,984 / 20,000 / 29,984 / 40,000 examples
+  eval_export_updates: {full_ft: [625, 1250], default: [1250]}
+  keep_all_recovery: false       # true keeps all 4 resumable checkpoints (Full FT: ~7 GB each)
+  log_every: 1
+
+variants:
+  full_ft:   {kind: full, lr: 2.0e-5, l2sp_lambda: 0.0}
+  l2sp:      {kind: full, lr: 2.0e-5, l2sp_lambda: 1.0e-3, ref_device: cuda}   # ref_device: cuda|cpu
+  lora4:     {kind: lora, lr: 2.0e-4, r: 4,  alpha: 8,  dropout: 0.05, protect_k: 0}
+  lora16:    {kind: lora, lr: 2.0e-4, r: 16, alpha: 32, dropout: 0.05, protect_k: 0}
+  oplora16:  {kind: lora, lr: 2.0e-4, r: 16, alpha: 32, dropout: 0.05, protect_k: 128}
+
+lora_targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+eval:
+  # condition -> (variant, update). Seven evaluation conditions.
+  conditions:
+    baseline:     [null, 0]
+    full_ft_mid:  [full_ft, 625]
+    full_ft:      [full_ft, 1250]
+    l2sp:         [l2sp, 1250]
+    lora4:        [lora4, 1250]
+    lora16:       [lora16, 1250]
+    oplora16:     [oplora16, 1250]
+  gen_batch_size: 32             # lm-eval HF batch size for GSM8K generation (lower to 8-16 on a T4)
+  ll_batch_size: 32              # likelihood tasks
+  max_gen_toks: 1024
+  ll_tasks: [hellaswag, boolq, arc_easy]
+  gen_task: gsm8k_cot
+  limit: null                    # set e.g. 20 for a smoke test ONLY (never for reported numbers)
+
+diagnostics:
+  layers: [0, 13, 27]
+  module: down_proj
+  protect_k: 128
+  probe_n_per_set: 32
+
+qualitative:
+  max_new_tokens: 512
+  batch_size: 1                  # batch 1 = no padding effects on greedy outputs

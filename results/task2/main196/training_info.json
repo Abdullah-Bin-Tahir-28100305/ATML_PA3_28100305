@@ -1,0 +1,81 @@
+{
+  "run_name": "main196",
+  "num_visual_tokens": 196,
+  "train_sec": 5666.767419447999,
+  "train_hours": 1.5741020609577774,
+  "stage_sec": {
+    "caption_alignment": 2665.760061288005,
+    "visual_instruction": 1995.8457049859926,
+    "natural_vqa": 1005.161653174001
+  },
+  "trainable_by_stage": {
+    "caption_alignment": 1837056,
+    "visual_instruction": 6424576,
+    "natural_vqa": 6424576
+  },
+  "mixture_counts": {
+    "caption_alignment": {
+      "caption_examples": 36000
+    },
+    "visual_instruction": {
+      "presence": 6071,
+      "counting": 3006,
+      "caption": 2923
+    },
+    "natural_vqa": {
+      "vqa": 4160,
+      "presence": 600,
+      "counting": 608,
+      "caption": 632
+    }
+  },
+  "skipped_updates": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "peak_gpu_mem_mb_this_session": {
+    "allocated_mb": 1610.8193359375,
+    "reserved_mb": 2488.0
+  },
+  "checks": [
+    {
+      "feature_shape_196x768": true
+    },
+    {
+      "stage": 1,
+      "connector_grad_norm_first_step": NaN,
+      "connector_receives_grad": false,
+      "original_llm_params_frozen": true,
+      "llm_trainable_param_kinds": [],
+      "trainable_params": 1837056
+    },
+    {
+      "stage": 2,
+      "connector_grad_norm_first_step": 3.700274705886841,
+      "connector_receives_grad": true,
+      "original_llm_params_frozen": true,
+      "llm_trainable_param_kinds": [
+        "lora_A",
+        "lora_B"
+      ],
+      "trainable_params": 6424576
+    },
+    {
+      "stage": 3,
+      "connector_grad_norm_first_step": 1.5902901887893677,
+      "connector_receives_grad": true,
+      "original_llm_params_frozen": true,
+      "llm_trainable_param_kinds": [
+        "lora_A",
+        "lora_B"
+      ],
+      "trainable_params": 6424576
+    }
+  ],
+  "total_updates": 4500,
+  "total_example_presentations": 72000,
+  "gpu": "Tesla T4"
+}

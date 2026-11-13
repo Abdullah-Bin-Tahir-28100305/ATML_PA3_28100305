@@ -1,0 +1,45 @@
+{
+  "variant": "lora4",
+  "config": {
+    "kind": "lora",
+    "lr": 0.0002,
+    "r": 4,
+    "alpha": 8,
+    "dropout": 0.05,
+    "protect_k": 0
+  },
+  "trainable_params": 2523136,
+  "total_unique_params_in_model": 598573056,
+  "n_adapted_modules": 196,
+  "l2sp_reference_bytes": 0,
+  "l2sp_reference_device": null,
+  "adapter_params": 2523136,
+  "recovery_ckpt_bytes": {
+    "312": 30755485,
+    "625": 30755549,
+    "937": 30755613,
+    "1250": 30755613
+  },
+  "train_sec": 9583.50110423401,
+  "skipped_updates": [],
+  "exports": {
+    "1250": {
+      "update": 1250,
+      "export_sec": 0.06521999100004905,
+      "export_bytes": 47905794,
+      "adapter_file_bytes": 10154616
+    }
+  },
+  "train_hours": 2.6620836400650028,
+  "l2sp_penalty_sec": 0.0,
+  "checkpoint_save_sec": 1.1055743359997905,
+  "setup_sec": 11.083299824999983,
+  "peak_gpu_mem_mb_this_session": {
+    "allocated_mb": 4819.9306640625,
+    "reserved_mb": 11918.0
+  },
+  "peak_gpu_mem_mb_max_over_sessions": 4819.9306640625,
+  "n_skipped": 0,
+  "resumed_at": [],
+  "gpu": "NVIDIA A100-SXM4-40GB"
+}

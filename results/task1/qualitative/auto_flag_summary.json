@@ -1,0 +1,170 @@
+{
+ "baseline|plain": {
+  "n": 8,
+  "truncated": 1,
+  "json_valid": 0,
+  "mean_rep4": 0.018625,
+  "mean_math_markers": 0.0,
+  "mean_tokens": 178.125
+ },
+ "baseline|json": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 8,
+  "mean_rep4": 0.05375,
+  "mean_math_markers": 0.0,
+  "mean_tokens": 73.25
+ },
+ "baseline|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.08325,
+  "mean_math_markers": 0.0,
+  "mean_tokens": 55.0
+ },
+ "full_ft_mid|plain": {
+  "n": 8,
+  "truncated": 4,
+  "json_valid": 0,
+  "mean_rep4": 0.28225,
+  "mean_math_markers": 0.5,
+  "mean_tokens": 321.75
+ },
+ "full_ft_mid|json": {
+  "n": 8,
+  "truncated": 1,
+  "json_valid": 2,
+  "mean_rep4": 0.221875,
+  "mean_math_markers": 0.75,
+  "mean_tokens": 147.0
+ },
+ "full_ft_mid|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.309875,
+  "mean_math_markers": 0.875,
+  "mean_tokens": 89.5
+ },
+ "full_ft|plain": {
+  "n": 8,
+  "truncated": 4,
+  "json_valid": 0,
+  "mean_rep4": 0.296,
+  "mean_math_markers": 0.5,
+  "mean_tokens": 356.0
+ },
+ "full_ft|json": {
+  "n": 8,
+  "truncated": 2,
+  "json_valid": 2,
+  "mean_rep4": 0.30525,
+  "mean_math_markers": 0.75,
+  "mean_tokens": 238.0
+ },
+ "full_ft|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.1685,
+  "mean_math_markers": 0.5,
+  "mean_tokens": 74.375
+ },
+ "l2sp|plain": {
+  "n": 8,
+  "truncated": 3,
+  "json_valid": 0,
+  "mean_rep4": 0.389375,
+  "mean_math_markers": 0.5,
+  "mean_tokens": 295.25
+ },
+ "l2sp|json": {
+  "n": 8,
+  "truncated": 1,
+  "json_valid": 2,
+  "mean_rep4": 0.172625,
+  "mean_math_markers": 0.375,
+  "mean_tokens": 160.875
+ },
+ "l2sp|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.170625,
+  "mean_math_markers": 0.5,
+  "mean_tokens": 81.0
+ },
+ "lora4|plain": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.012625,
+  "mean_math_markers": 0.125,
+  "mean_tokens": 90.75
+ },
+ "lora4|json": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 3,
+  "mean_rep4": 0.030125,
+  "mean_math_markers": 0.0,
+  "mean_tokens": 57.375
+ },
+ "lora4|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.09012500000000001,
+  "mean_math_markers": 0.25,
+  "mean_tokens": 66.0
+ },
+ "lora16|plain": {
+  "n": 8,
+  "truncated": 2,
+  "json_valid": 0,
+  "mean_rep4": 0.26975000000000005,
+  "mean_math_markers": 0.375,
+  "mean_tokens": 212.25
+ },
+ "lora16|json": {
+  "n": 8,
+  "truncated": 2,
+  "json_valid": 2,
+  "mean_rep4": 0.333,
+  "mean_math_markers": 0.25,
+  "mean_tokens": 225.0
+ },
+ "lora16|template": {
+  "n": 8,
+  "truncated": 1,
+  "json_valid": 0,
+  "mean_rep4": 0.346625,
+  "mean_math_markers": 14.625,
+  "mean_tokens": 151.375
+ },
+ "oplora16|plain": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.1055,
+  "mean_math_markers": 0.25,
+  "mean_tokens": 129.375
+ },
+ "oplora16|json": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 3,
+  "mean_rep4": 0.09325,
+  "mean_math_markers": 0.125,
+  "mean_tokens": 127.0
+ },
+ "oplora16|template": {
+  "n": 8,
+  "truncated": 0,
+  "json_valid": 0,
+  "mean_rep4": 0.25025,
+  "mean_math_markers": 0.625,
+  "mean_tokens": 83.5
+ }
+}

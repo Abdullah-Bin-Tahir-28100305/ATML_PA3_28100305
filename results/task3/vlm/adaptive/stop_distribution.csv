@@ -1,0 +1,9 @@
+family,stop_n,fraction
+agreement,4,0.7135
+agreement,8,0.075125
+agreement,16,0.0205
+agreement,32,0.190875
+quality_aware,4,0.6525
+quality_aware,8,0.096
+quality_aware,16,0.029375
+quality_aware,32,0.222125

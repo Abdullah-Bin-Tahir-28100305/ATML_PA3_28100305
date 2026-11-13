@@ -1,0 +1,25 @@
+comparison,factor,benchmark,diff_pp,ci95_lo,ci95_hi
+LoRA-16 − LoRA-4,rank,GSM8K EM (flex),1.67,-0.45,3.72
+LoRA-16 − LoRA-4,rank,HellaSwag acc_norm,0.06,-0.28,0.40
+LoRA-16 − LoRA-4,rank,BoolQ acc,5.75,4.43,7.04
+LoRA-16 − LoRA-4,rank,ARC-E acc_norm,0.97,0.00,1.98
+Full FT + L2-SP − Full FT,explicit regularization,GSM8K EM (flex),0.53,-1.29,2.28
+Full FT + L2-SP − Full FT,explicit regularization,HellaSwag acc_norm,0.30,-0.07,0.65
+Full FT + L2-SP − Full FT,explicit regularization,BoolQ acc,7.06,5.84,8.26
+Full FT + L2-SP − Full FT,explicit regularization,ARC-E acc_norm,-1.26,-2.23,-0.29
+OPLoRA-16 − LoRA-16,orthogonal protection,GSM8K EM (flex),0.15,-1.52,1.90
+OPLoRA-16 − LoRA-16,orthogonal protection,HellaSwag acc_norm,-0.08,-0.32,0.17
+OPLoRA-16 − LoRA-16,orthogonal protection,BoolQ acc,-0.64,-1.22,0.00
+OPLoRA-16 − LoRA-16,orthogonal protection,ARC-E acc_norm,-1.30,-1.98,-0.63
+LoRA-16 − Full FT,full vs low-rank,GSM8K EM (flex),-2.81,-5.23,-0.53
+LoRA-16 − Full FT,full vs low-rank,HellaSwag acc_norm,1.43,0.95,1.89
+LoRA-16 − Full FT,full vs low-rank,BoolQ acc,15.32,13.33,17.19
+LoRA-16 − Full FT,full vs low-rank,ARC-E acc_norm,0.04,-1.18,1.30
+Full FT − Full FT (mid),Full FT progression,GSM8K EM (flex),7.81,5.53,10.24
+Full FT − Full FT (mid),Full FT progression,HellaSwag acc_norm,0.39,0.04,0.72
+Full FT − Full FT (mid),Full FT progression,BoolQ acc,0.24,-0.40,0.92
+Full FT − Full FT (mid),Full FT progression,ARC-E acc_norm,2.15,1.35,2.95
+Full FT − Baseline,Full FT vs base,GSM8K EM (flex),21.08,17.82,24.26
+Full FT − Baseline,Full FT vs base,HellaSwag acc_norm,-1.20,-1.79,-0.67
+Full FT − Baseline,Full FT vs base,BoolQ acc,-7.16,-9.30,-5.08
+Full FT − Baseline,Full FT vs base,ARC-E acc_norm,8.00,6.48,9.55

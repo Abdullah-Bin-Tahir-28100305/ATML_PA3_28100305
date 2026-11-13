@@ -1,0 +1,6 @@
+{
+  "rule": "s = mean||text-token embedding|| (2000 training captions) / mean||connector(F)|| at init (512 training images); fixed, non-trainable",
+  "text_token_norm": 0.8716287612915039,
+  "connector_token_norm_at_init": 15.836191177368164,
+  "scale": 0.055040303033040354
+}

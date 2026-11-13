@@ -1,0 +1,145 @@
+{
+  "caption_dev": {
+    "n_items": 96,
+    "n_images": 96
+  },
+  "grounding_dev": {
+    "n_items": 24,
+    "n_images": 48,
+    "kinds": {
+      "presence": 12,
+      "counting": 12
+    },
+    "answers": {
+      "no": 12,
+      "yes": 12,
+      "1": 10,
+      "2": 8,
+      "3": 4,
+      "4": 2
+    }
+  },
+  "grounding_test": {
+    "n_items": 64,
+    "n_images": 128,
+    "kinds": {
+      "presence": 32,
+      "counting": 32
+    },
+    "answers": {
+      "no": 32,
+      "yes": 32,
+      "1": 30,
+      "2": 21,
+      "3": 10,
+      "4": 3
+    }
+  },
+  "vqa_dev": {
+    "n_items": 32,
+    "n_images": 64,
+    "kinds": {
+      "yes/no": 12,
+      "number": 8,
+      "other": 12
+    },
+    "answers": {
+      "no": 12,
+      "yes": 12,
+      "1": 6,
+      "2": 3,
+      "4": 2,
+      "3": 2,
+      "blue": 2,
+      "green": 2,
+      "right": 2,
+      "left": 2,
+      "black": 2,
+      "46": 1,
+      "12": 1,
+      "8": 1,
+      "train": 1
+    }
+  },
+  "vqa_test": {
+    "n_items": 96,
+    "n_images": 192,
+    "kinds": {
+      "yes/no": 36,
+      "number": 24,
+      "other": 36
+    },
+    "answers": {
+      "yes": 36,
+      "no": 36,
+      "2": 14,
+      "1": 10,
+      "red": 8,
+      "0": 6,
+      "4": 5,
+      "3": 5,
+      "blue": 5,
+      "black": 4,
+      "frisbee": 3,
+      "horse": 3,
+      "white": 3,
+      "5": 2,
+      "up": 2
+    }
+  },
+  "caption_train": {
+    "n_items": 18000,
+    "n_images": 6000
+  },
+  "presence_pool": {
+    "n_items": 20000,
+    "n_images": 7987,
+    "kinds": {
+      "presence": 20000
+    },
+    "answers": {
+      "no": 20000,
+      "yes": 20000
+    }
+  },
+  "counting_pool": {
+    "n_items": 10000,
+    "n_images": 6492,
+    "kinds": {
+      "counting": 10000
+    },
+    "answers": {
+      "1": 9184,
+      "2": 6676,
+      "3": 2574,
+      "4": 1566
+    }
+  },
+  "vqa_train": {
+    "n_items": 1536,
+    "n_images": 2941,
+    "kinds": {
+      "yes/no": 640,
+      "number": 256,
+      "other": 640
+    },
+    "answers": {
+      "no": 640,
+      "yes": 640,
+      "1": 161,
+      "2": 160,
+      "white": 126,
+      "black": 78,
+      "3": 67,
+      "blue": 60,
+      "red": 56,
+      "yellow": 45,
+      "0": 43,
+      "green": 39,
+      "brown": 35,
+      "4": 34,
+      "tennis": 32
+    }
+  },
+  "split_isolation": "passed: eval sets mutually image-disjoint, val-only, disjoint from all training pools"
+}

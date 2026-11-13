@@ -1,0 +1,31 @@
+{
+  "condition": "baseline",
+  "model_path": "Qwen/Qwen3-0.6B",
+  "gsm8k": {
+    "flexible_em": 0.4336618650492798,
+    "strict_em": 0.0,
+    "n": 1319,
+    "truncation_rate": 0.008339651250947688,
+    "extraction_rate": 1.0,
+    "em_among_extractable_nontruncated": 0.43730886850152906,
+    "mean_response_tokens": 225.9931766489765
+  },
+  "hellaswag": {
+    "acc": 0.3759211312487552,
+    "acc_stderr": 0.004833699243292373,
+    "acc_norm": 0.47321250746863175,
+    "acc_norm_stderr": 0.004982615233056769
+  },
+  "boolq": {
+    "acc": 0.6434250764525994,
+    "acc_stderr": 0.00837754809941546,
+    "acc_norm": null,
+    "acc_norm_stderr": null
+  },
+  "arc_easy": {
+    "acc": 0.6081649831649831,
+    "acc_stderr": 0.010016835016835016,
+    "acc_norm": 0.5597643097643098,
+    "acc_norm_stderr": 0.010186228624515719
+  }
+}

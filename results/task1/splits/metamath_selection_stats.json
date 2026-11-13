@@ -1,0 +1,22 @@
+{
+  "scanned": 40002,
+  "empty": 0,
+  "too_long": 2,
+  "gsm8k_overlap": 0,
+  "kept": 40000,
+  "last_src_idx": 40001,
+  "mean_len": 247.710575,
+  "max_len": 1941,
+  "mean_response_tokens": 177.5014,
+  "total_response_tokens": 7100056,
+  "type_counts": {
+    "GSM_AnsAug": 8140,
+    "GSM_FOBAR": 4043,
+    "GSM_Rephrased": 8044,
+    "GSM_SV": 4100,
+    "MATH_AnsAug": 7580,
+    "MATH_FOBAR": 1574,
+    "MATH_Rephrased": 5015,
+    "MATH_SV": 1504
+  }
+}

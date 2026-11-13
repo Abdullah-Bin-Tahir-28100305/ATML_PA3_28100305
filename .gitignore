@@ -1,0 +1,16 @@
+outputs/
+data/*
+!data/README.md
+!data/first_plot_questions.yaml
+*.pt
+*.pkl
+*.safetensors
+*.npy
+__pycache__/
+.ipynb_checkpoints/
+*.tmp
+
+# Google Drive shortcut files
+*.gsheet
+*.gdoc
+*.gslides

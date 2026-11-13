@@ -1,0 +1,31 @@
+{
+  "condition": "full_ft",
+  "model_path": "/content/drive/MyDrive/ATML_PA3/outputs/task1/runs/full_ft/export_u1250",
+  "gsm8k": {
+    "flexible_em": 0.6444275966641395,
+    "strict_em": 0.0,
+    "n": 1319,
+    "truncation_rate": 0.009097801364670205,
+    "extraction_rate": 1.0,
+    "em_among_extractable_nontruncated": 0.6503442999234889,
+    "mean_response_tokens": 140.58453373768006
+  },
+  "hellaswag": {
+    "acc": 0.37353116908982276,
+    "acc_stderr": 0.0048275265848897455,
+    "acc_norm": 0.46116311491734713,
+    "acc_norm_stderr": 0.00497470642843438
+  },
+  "boolq": {
+    "acc": 0.5718654434250765,
+    "acc_stderr": 0.008654253415780999,
+    "acc_norm": null,
+    "acc_norm_stderr": null
+  },
+  "arc_easy": {
+    "acc": 0.6607744107744108,
+    "acc_stderr": 0.009714917207765775,
+    "acc_norm": 0.6397306397306397,
+    "acc_norm_stderr": 0.00985100258473252
+  }
+}

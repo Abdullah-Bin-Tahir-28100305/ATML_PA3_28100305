@@ -1,0 +1,98 @@
+{
+  "eval": {
+    "spearman_mean_over_questions": {
+      "K~correct": {
+        "mean": 0.1979,
+        "median": 0.2237,
+        "count": 469
+      },
+      "L~correct": {
+        "mean": 0.1341,
+        "median": 0.1474,
+        "count": 469
+      },
+      "T~K": {
+        "mean": -0.1611,
+        "median": -0.1841,
+        "count": 800
+      },
+      "T~L": {
+        "mean": 0.2245,
+        "median": 0.2406,
+        "count": 800
+      },
+      "T~correct": {
+        "mean": -0.0763,
+        "median": -0.0875,
+        "count": 469
+      },
+      "negT~correct": {
+        "mean": 0.0763,
+        "median": 0.0875,
+        "count": 469
+      }
+    },
+    "quartile_top_minus_bottom_all": {
+      "K": 0.1197,
+      "L": 0.0783,
+      "T": -0.0459,
+      "negT": 0.0456
+    },
+    "quartile_top_minus_bottom_mixed": {
+      "K": 0.2042,
+      "L": 0.1335,
+      "T": -0.0784,
+      "negT": 0.0778
+    },
+    "n_questions": 800,
+    "n_mixed": 469
+  },
+  "dev": {
+    "spearman_mean_over_questions": {
+      "K~correct": {
+        "mean": 0.1784,
+        "median": 0.2042,
+        "count": 115
+      },
+      "L~correct": {
+        "mean": 0.067,
+        "median": 0.0875,
+        "count": 115
+      },
+      "T~K": {
+        "mean": -0.1394,
+        "median": -0.1835,
+        "count": 200
+      },
+      "T~L": {
+        "mean": 0.1914,
+        "median": 0.2104,
+        "count": 200
+      },
+      "T~correct": {
+        "mean": -0.1714,
+        "median": -0.2042,
+        "count": 115
+      },
+      "negT~correct": {
+        "mean": 0.1714,
+        "median": 0.2042,
+        "count": 115
+      }
+    },
+    "quartile_top_minus_bottom_all": {
+      "K": 0.0988,
+      "L": 0.0269,
+      "T": -0.1075,
+      "negT": 0.1081
+    },
+    "quartile_top_minus_bottom_mixed": {
+      "K": 0.1717,
+      "L": 0.0467,
+      "T": -0.187,
+      "negT": 0.188
+    },
+    "n_questions": 200,
+    "n_mixed": 115
+  }
+}

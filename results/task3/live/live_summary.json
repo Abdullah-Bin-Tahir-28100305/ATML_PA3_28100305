@@ -1,0 +1,72 @@
+{
+  "long": {
+    "accuracy": 0.58,
+    "mean_input_tokens": 108.38,
+    "mean_output_tokens": 676.88,
+    "mean_total_tokens": 785.26,
+    "mean_seconds": 32.88318315624003,
+    "total_seconds": 1644.1591578120015,
+    "truncation_rate": 0.02,
+    "extraction_rate": 0.98
+  },
+  "parallel": {
+    "accuracy": 0.6,
+    "mean_input_tokens": 325.14,
+    "mean_output_tokens": 1881.88,
+    "mean_total_tokens": 2207.02,
+    "mean_seconds": 90.73952464712004,
+    "total_seconds": 4536.976232356002,
+    "truncation_rate_per_response": 0.1733333333333333,
+    "any_truncated_rate": 0.32,
+    "extraction_rate_per_response": 0.8333333333333333,
+    "final_answer_extracted_rate": 0.82
+  },
+  "refine": {
+    "accuracy": 0.56,
+    "mean_input_tokens": 913.74,
+    "mean_output_tokens": 1299.24,
+    "mean_total_tokens": 2212.98,
+    "mean_seconds": 63.05022829127998,
+    "total_seconds": 3152.511414563999,
+    "initial_accuracy": 0.56,
+    "initial_truncation_rate": 0.2,
+    "revision_truncation_rate": 0.04,
+    "initial_extraction_rate": 0.8,
+    "revision_extraction_rate": 0.96,
+    "answer_changed_rate": 0.18,
+    "transitions": {
+      "C->C": 27,
+      "W->W": 21,
+      "C->W": 1,
+      "W->C": 1
+    }
+  },
+  "diff_parallel_minus_long_pp": {
+    "mean": 2.0,
+    "ci95": [
+      -10.0,
+      14.000000000000002
+    ]
+  },
+  "diff_refine_minus_long_pp": {
+    "mean": -2.0,
+    "ci95": [
+      -14.000000000000002,
+      10.0
+    ]
+  },
+  "diff_refine_minus_parallel_pp": {
+    "mean": -4.0,
+    "ci95": [
+      -12.0,
+      4.0
+    ]
+  },
+  "diff_refine_minus_initial_pp": {
+    "mean": 0.0,
+    "ci95": [
+      -6.0,
+      6.0
+    ]
+  }
+}

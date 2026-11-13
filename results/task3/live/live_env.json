@@ -1,0 +1,11 @@
+{
+  "peak_gpu_mem_mb": {
+    "allocated_mb": 6137.916015625,
+    "reserved_mb": 6364.0
+  },
+  "gpu": "Tesla T4",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "dtype": "float16",
+  "batch_size": 1
+}

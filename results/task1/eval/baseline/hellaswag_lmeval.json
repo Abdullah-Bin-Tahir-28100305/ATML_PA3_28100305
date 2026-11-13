@@ -1,0 +1,12 @@
+{
+  "results": {
+    "alias": "hellaswag",
+    "acc,none": 0.3759211312487552,
+    "acc_stderr,none": 0.004833699243292373,
+    "acc_norm,none": 0.47321250746863175,
+    "acc_norm_stderr,none": 0.004982615233056769
+  },
+  "versions": {
+    "hellaswag": 1.0
+  }
+}

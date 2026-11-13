@@ -1,0 +1,19 @@
+# Tested target: Google Colab GPU runtime (torch preinstalled; CUDA). Versions pinned for reproducibility;
+# the exact environment used for every run is also recorded to results/env_*.json (pip freeze, GPU, versions).
+transformers==4.51.3        # first release line with Qwen3 support
+accelerate>=0.34
+datasets==3.6.0             # <4.0: lm-eval tasks (e.g. boolq/super_glue) still rely on dataset scripts
+lm_eval==0.4.8
+safetensors>=0.4
+sentencepiece
+pyyaml
+pandas
+pyarrow
+numpy
+scipy
+matplotlib
+tabulate
+requests
+pillow
+tqdm
+math-verify[antlr4_13_2]==0.9.0

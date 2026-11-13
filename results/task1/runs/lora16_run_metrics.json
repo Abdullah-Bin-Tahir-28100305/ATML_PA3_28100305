@@ -1,0 +1,49 @@
+{
+  "variant": "lora16",
+  "config": {
+    "kind": "lora",
+    "lr": 0.0002,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "protect_k": 0
+  },
+  "trainable_params": 10092544,
+  "total_unique_params_in_model": 606142464,
+  "n_adapted_modules": 196,
+  "l2sp_reference_bytes": 0,
+  "l2sp_reference_device": null,
+  "adapter_params": 10092544,
+  "recovery_ckpt_bytes": {
+    "312": 121588381,
+    "625": 121588381,
+    "937": 121588445,
+    "1000": 121588573,
+    "1100": 121588637,
+    "1250": 121588637
+  },
+  "train_sec": 10310.691812011008,
+  "skipped_updates": [],
+  "exports": {
+    "1250": {
+      "update": 1250,
+      "export_sec": 0.12946506599973873,
+      "export_bytes": 78184788,
+      "adapter_file_bytes": 40433608
+    }
+  },
+  "train_hours": 2.8640810588919465,
+  "l2sp_penalty_sec": 0.0,
+  "checkpoint_save_sec": 3.5854939429996193,
+  "setup_sec": 15.092650714000001,
+  "peak_gpu_mem_mb_this_session": {
+    "allocated_mb": 4500.44921875,
+    "reserved_mb": 14096.0
+  },
+  "peak_gpu_mem_mb_max_over_sessions": 4928.2451171875,
+  "n_skipped": 0,
+  "resumed_at": [
+    937
+  ],
+  "gpu": "Tesla T4"
+}

@@ -1,0 +1,6 @@
+method,trainable_params,train_hours,peak_gpu_mem_GB,recovery_ckpt_GB,inference_export_MB,adapter_file_MB,export_sec,skipped_updates,l2sp_ref_MB,l2sp_penalty_sec,oplora_basis_MB,oplora_basis_file_MB,oplora_svd_sec,gpu
+Full FT,596049920,1.899,12.98,6.662,1485,0,7.595,0,0,0,0,0,,NVIDIA L4
+Full FT + L2-SP,596049920,2.178,12.97,6.662,1485,0,5.895,0,2274,742.8,0,0,,NVIDIA L4
+LoRA-4,2523136,2.662,4.707,0.02864,45.69,9.684,0.06522,0,0,0,0,0,,NVIDIA A100-SXM4-40GB
+LoRA-16,10092544,2.864,4.813,0.1132,74.56,38.56,0.1295,0,0,0,0,0,,Tesla T4
+OPLoRA-16,10092544,3.464,5.121,0.1132,382.6,38.56,0.9033,0,0,0,308,308,15.13,NVIDIA L4

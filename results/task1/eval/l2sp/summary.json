@@ -1,0 +1,31 @@
+{
+  "condition": "l2sp",
+  "model_path": "/content/drive/MyDrive/ATML_PA3/outputs/task1/runs/l2sp/export_u1250",
+  "gsm8k": {
+    "flexible_em": 0.6497346474601972,
+    "strict_em": 0.0,
+    "n": 1319,
+    "truncation_rate": 0.00530705079605762,
+    "extraction_rate": 1.0,
+    "em_among_extractable_nontruncated": 0.6532012195121951,
+    "mean_response_tokens": 137.7877179681577
+  },
+  "hellaswag": {
+    "acc": 0.3754232224656443,
+    "acc_stderr": 0.004832423630593549,
+    "acc_norm": 0.46415056761601275,
+    "acc_norm_stderr": 0.004976939333240351
+  },
+  "boolq": {
+    "acc": 0.6425076452599389,
+    "acc_stderr": 0.00838233606948497,
+    "acc_norm": null,
+    "acc_norm_stderr": null
+  },
+  "arc_easy": {
+    "acc": 0.6561447811447811,
+    "acc_stderr": 0.009746660584852388,
+    "acc_norm": 0.627104377104377,
+    "acc_norm_stderr": 0.009922743197129102
+  }
+}

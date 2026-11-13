@@ -1,0 +1,71 @@
+{
+  "rule": "Rule: first k held-out MathVista questions (split order) whose N=32 pool has both correct and incorrect\nrollouts AND where VisConf (highest) and self-consistency pick different answers at N=32 (natural rollout\norder). For each: the VisConf-top rollout and the earliest correct rollout are plotted.",
+  "examples": [
+    {
+      "sample_id": "379",
+      "which": "VisConf-top",
+      "rollout_id": 29,
+      "correct": false,
+      "C": 0.38875472916061693,
+      "V": 0.0547057214788605,
+      "Z": 0.02126710793705056,
+      "Ztok": 0.01889916737766492,
+      "T": 116
+    },
+    {
+      "sample_id": "379",
+      "which": "earliest correct",
+      "rollout_id": 0,
+      "correct": true,
+      "C": 0.4614899170524547,
+      "V": 0.042290325525874736,
+      "Z": 0.01951655881905724,
+      "Ztok": 0.017750399795709425,
+      "T": 179
+    },
+    {
+      "sample_id": "358",
+      "which": "VisConf-top",
+      "rollout_id": 18,
+      "correct": false,
+      "C": 0.4569964800340628,
+      "V": 0.05070992802506846,
+      "Z": 0.02317425861023696,
+      "Ztok": 0.017191352530888142,
+      "T": 277
+    },
+    {
+      "sample_id": "358",
+      "which": "earliest correct",
+      "rollout_id": 0,
+      "correct": true,
+      "C": 0.47663947984559946,
+      "V": 0.03622096141796188,
+      "Z": 0.01726434020976488,
+      "Ztok": 0.014725555803549827,
+      "T": 389
+    },
+    {
+      "sample_id": "204",
+      "which": "VisConf-top",
+      "rollout_id": 18,
+      "correct": false,
+      "C": 0.32658299970710764,
+      "V": 0.06795666405501997,
+      "Z": 0.0221934911971766,
+      "Ztok": 0.021233461523771095,
+      "T": 76
+    },
+    {
+      "sample_id": "204",
+      "which": "earliest correct",
+      "rollout_id": 2,
+      "correct": true,
+      "C": 0.40362043443301643,
+      "V": 0.04539330492342941,
+      "Z": 0.018321665453544963,
+      "Ztok": 0.014275856682774537,
+      "T": 186
+    }
+  ]
+}
